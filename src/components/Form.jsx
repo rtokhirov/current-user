@@ -79,6 +79,7 @@ function Form({setShowForm,addUsers}) {
 const FormDiv=styled.div`
     z-index: 3;
     width: 400px;
+    min-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -104,6 +105,9 @@ const FormDiv=styled.div`
         display: flex;
         gap: 15px;
         padding-left: 15px;
+    }
+    @media only screen and (max-width: 600px) {
+        width: 90%;
     }
 `
 

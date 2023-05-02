@@ -31,6 +31,14 @@ const Nav=styled.nav`
     h1{
         font-size: 40px;
     }
+    @media only screen and (max-width: 600px) {
+        h1{
+            font-size: 25px;
+        }
+        h3{
+            font-size: 15px;
+        }
+    }
 `
 
 export default Navbar

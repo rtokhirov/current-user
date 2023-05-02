@@ -15,26 +15,14 @@ function Users({user,deleteUsers}) {
   )
 }
 
-const UserContainer=styled.div`
-    
-    max-width: 1340px;
-    width: 100%;
-    padding: 30px 20px;
-    margin-right: auto;
-    margin-left: auto;
-    flex-grow: 1;
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 40px 20px;
-`
+
 const UserDiv=styled.div`
-    width: 250px;
+    /* width: 250px; */
     text-align: center;
     box-shadow: rgba(47, 126, 187, 0.7) 3px 0px 10px 2px;
     padding: 0.8rem 0.5rem;
     transition: transform 0.2s ease 0s;
-    height: 350px;
+    height: 340px;
     img{
         width: 150px;
         height: 150px;
