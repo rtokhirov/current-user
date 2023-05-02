@@ -35,10 +35,11 @@ function Form({setShowForm,addUsers}) {
     }
     
   return (
-    <form style={{position:'absolute',width:'100%',height:'100%',backdropFilter:'blur(8px)',zIndex:'2',backgroundColor:"rgba(0,0,0,0.6)"}} 
+    <form style={{position:'fixed',width:'100%',height:'100%',backdropFilter:'blur(8px)',zIndex:'2',backgroundColor:"rgba(0,0,0,0.6)",overflow:'hidden'}} 
     onClick={()=>{setShowForm(false)}}
+    onScroll={(e)=>{e.stopPropagation()}}
     onSubmit={handleSubmit} ref={formref}>
-        <FormDiv onClick={(e)=>{e.stopPropagation()}}>
+        <FormDiv onClick={(e)=>{e.stopPropagation()}} onScroll={(e)=>{e.stopPropagation()}}>
             <label >
                 <p>Picture: </p>
                 <input required type="url" name="" id="" ref={picture} />
