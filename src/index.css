@@ -84,6 +84,7 @@ button:focus-visible {
     align-content: center;
     gap: 20px 20px;
     overflow: hidden;
+    height: 100%;
 }
 
 @media (prefers-color-scheme: light) {
